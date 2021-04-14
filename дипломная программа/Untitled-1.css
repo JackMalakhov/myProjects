@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: min-content 1fr min-content;
+      grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
+      grid-template-rows: min-content 1fr min-content;
+  font-size: 20pt;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #CED3DC;
+  text-align: center;
+}
+
+body header {
+  background-color: #fff;
+  text-align: left;
+  padding-left: 30px;
+  color: #1D1E2C;
+}
+
+body footer {
+  text-align: right;
+}
+
+body footer .foot {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(430px, auto))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(430px, auto));
+  grid-gap: 30px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+body footer .foot .foot-item {
+  background-color: #ABA9C3;
+  width: 400px;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  font-size: 14pt;
+  align-self: end;
+  padding-right: 30px;
+  color: #fff;
+}
+
+body footer .foot .foot-item hr {
+  border-top: 1px solid #fff;
+}
+
+body footer .endLine {
+  background-color: #fff;
+}
+
+body .page {
+  color: #000000;
+  padding: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(550px, auto))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(550px, auto));
+  grid-gap: 30px;
+}
+
+body .box {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 5px #fafafa;
+          box-shadow: 0 0 5px #fafafa;
+}
+
+body button,
+body input {
+  outline: none;
+  border-radius: 5px;
+  border: solid 1px black;
+  background-color: #fff;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  font-size: 18pt;
+}
+
+body button:hover, body button:focus,
+body input:hover,
+body input:focus {
+  background-color: #ABA9C3;
+  color: #fff;
+}
+
+body #groupList {
+  text-align: left;
+}
+
+body textarea {
+  border-radius: 5px;
+  max-width: 500px;
+  max-height: 450px;
+  font-size: 24pt;
+}
+/*# sourceMappingURL=Untitled-1.css.map */

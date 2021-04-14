@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Untitled-1.css">
+    <title>Вычисление Количества траекторий</title>
+    <script src="proverka.js"></script>
+    
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <h1>
+                Подсчет числа допустимых траекторий
+            </h1>
+        </div>
+    </header>
+    
+    <div class="page">
+        <div class="box input">
+            <div class="data" >
+                    <h2>Введите данные</h2>
+                    <p>Максимальная длина шага</p>
+                    <p>
+                        <input type="number" autofocus value="2" id="maxLenthSteps" min="0">
+                    </p>
+                    <p>Точка установки экрана</p>
+                    
+                    <p>
+                        <input type="number" id="pointOfScreen" value="-1">
+                    </p>
+                    <p>Число шагов</p>
+                    <p>
+                        <input type="number" id="numberOfSteps" value="7" min="0">
+                    </p>
+                    
+                    <p>
+                        <button onclick="group()">Посчитать</button>  
+                    </p>           
+            </div>
+        </div>
+        <div class="box output">
+            <h2>Результаты</h2>
+            <p>Число групп</p>
+            <div class="put">
+                <p id="numberOfGroups">
+                    <font size=5pt color="gray"> none </font></p>
+            </div>
+            <p>Число траекторий</p>
+            <div class="put">
+                <p id="tragectories"><font size=5pt color="gray"> none </font></p>
+            </div>
+            
+        </div>
+        <div class="box info">
+            <h2>Все группы:</h2>
+            <p>
+                <textarea name="groups" readonly id="groupList" cols="16" rows="3">
+                    none
+            </textarea>
+            </p>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="foot">
+        <div class="foot-item">
+            <h3>Выполнил:</h3><hr />
+            <p>Студент 2 курса магистратуры ИМИТ ИГУ</p>
+            <p><em>Малахов Е. И.</em></p>
+        </div>
+        <div class="foot-item">
+            <h3>Научный руководитель:</h3><hr color="#fff" />
+            <p>Кандидат ф.-м. наук</p>
+            <p><em>Колокольникова Н. А.</em></p>
+        </div>
+    </div>
+        <div class="endLine">site end</div>
+    </footer>
+</body>
+
+</html>
+
