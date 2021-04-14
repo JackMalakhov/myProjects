@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+$color-red:rgb(121, 69, 69);
+$color-blue: rgb(82, 82, 136);
+body{
+
+    background-color: #fff;
+    color: $color-red;
+    nav{
+        
+        ul{
+            display: inline-block;
+            li{
+                display: inline-block;
+               
+                ul{
+                    transition: opacity 3s;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                &:hover{
+                    ul{
+                        transition: opacity 1s;
+                        opacity: 1;
+                        visibility: visible;
+                        li{
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    main{
+        padding-left: 200px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        background-color: $color-blue;
+        grid-gap: 20px;
+        .round{
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            background-color: #fff;
+    }
+}
